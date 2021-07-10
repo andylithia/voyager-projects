@@ -1,0 +1,128 @@
+Thread  	Address                 	Instruction                     	Result                                  	
+0000DEAD	ROM:init_scs_test       	Memory layout changed: 2 segments	Memory layout changed: 2 segments       	
+0000DEAD	ROM:Entry_1             	BL              init_scs_test   	Entry_1 call Entry_1init_scs_test       	
+0000DEAD	ROM:init_scs_test+C     	BX              LR              	init_scs_test returned to init_scs_testEntry_1+4	
+0000DEAD	ROM:Entry_1+8           	BL              sub_10F10       	Entry_1 call Entry_1sub_10F10           	
+0000DEAD	ROM:sub_10F10+16        	BLX             R1; sub_7806    	sub_10F10 call sub_10F10sub_7806        	
+0000DEAD	ROM:sub_7806:locret_7826	BX              LR              	sub_7806 returned to sub_7806sub_10F10+18	
+0000DEAD	ROM:00010DE8            	BL              sub_10D8C       	call sub_10D8C                          	
+0000DEAD	ROM:sub_10D8C+20        	BX              LR              	sub_10D8C returned to sub_10D8CROM:00010DEC	
+0000DEAD	ROM:00010E20            	BLEQ            sub_10E5E       	call ROM:00010E24                       	
+0000DEAD	ROM:00010E52            	POP.W           {R4-R8,R10,R11,PC}	returned to sub_10F10+18                	
+0000DEAD	ROM:sub_10F10+1E        	POP             {R4,PC}         	sub_10F10 returned to sub_10F10Entry_1:init_scs_test_failed	
+0000DEAD	ROM:Entry_1+12          	BL              sub_B3EC        	Entry_1 call Entry_1sub_B3EC            	
+0000DEAD	ROM:sub_B3EC+4          	BL              sub_B0D2        	sub_B3EC call sub_B3ECsub_B0D2          	
+0000DEAD	ROM:sub_B0D2+8          	BL              sub_AF16        	sub_B0D2 call sub_B0D2sub_AF16          	
+0000DEAD	ROM:0000C4AA            	BL              sub_D568        	call sub_D568                           	
+0000DEAD	ROM:sub_D568:locret_D596	BX              LR              	sub_D568 returned to sub_D568ROM:0000C4AE	
+0000DEAD	ROM:0000C4AE            	BL              sub_CB96        	call sub_CB96                           	
+0000DEAD	ROM:sub_CB96:locret_CBCE	BX              LR              	sub_CB96 returned to sub_CB96ROM:0000C4B2	
+0000DEAD	ROM:0000C4B4            	BL              sub_CB54        	call sub_CB54                           	
+0000DEAD	ROM:sub_CB54+40         	BX              LR              	sub_CB54 returned to sub_CB54ROM:loc_C4B8	
+0000DEAD	ROM:0000C4C4            	BL              sub_F818        	call sub_F818                           	
+0000DEAD	ROM:sub_F818+7E         	BLX             R0              	sub_F818 call sub_F818ROM:0000F8BA      	
+0000DEAD	ROM:0000F8C4            	BX              LR              	returned to sub_F818+80                 	
+0000DEAD	ROM:0000C4CA            	BL              sub_D568        	call sub_D568                           	
+0000DEAD	ROM:0000C4D4            	BL              sub_C120        	call sub_C120                           	
+0000DEAD	ROM:sub_C120+1C         	BX              LR              	sub_C120 returned to sub_C120ROM:loc_C4D8	
+0000DEAD	ROM:0000C4DA            	BL              sub_C166        	call sub_C166                           	
+0000DEAD	ROM:sub_C166+2          	BX              LR              	sub_C166 returned to sub_C166ROM:0000C4DE	
+0000DEAD	ROM:0000C4E4            	BL              sub_F92A        	call sub_F92A                           	
+0000DEAD	ROM:sub_F92A:locret_F96C	BX              LR              	sub_F92A returned to sub_F92AROM:0000C4E8	
+0000DEAD	ROM:sub_CA4E:locret_CA82	BX              LR              	sub_CA4E returned to sub_CA4Esub_B0D2+C 	
+0000DEAD	ROM:sub_B0D2+10         	BL              sub_ADD6        	sub_B0D2 call sub_B0D2sub_ADD6          	
+0000DEAD	ROM:sub_ADD6+5A         	BX              LR              	sub_ADD6 returned to sub_ADD6sub_B0D2+14	
+0000DEAD	ROM:sub_B0D2+18         	BL              sub_ADD6        	sub_B0D2 call sub_B0D2sub_ADD6          	
+0000DEAD	ROM:sub_B0D2+20         	BL              sub_ADD6        	sub_B0D2 call sub_B0D2sub_ADD6          	
+0000DEAD	ROM:sub_B0D2+24         	BL              sub_CAB2        	sub_B0D2 call sub_B0D2sub_CAB2          	
+0000DEAD	ROM:sub_CAB2:locret_CAE6	BX              LR              	sub_CAB2 returned to sub_CAB2sub_B0D2+28	
+0000DEAD	ROM:sub_B0D2+38         	BL              sub_C5E0        	sub_B0D2 call sub_B0D2sub_C5E0          	
+0000DEAD	ROM:sub_C5E0+A          	BL              sub_F97C        	sub_C5E0 call sub_C5E0sub_F97C          	
+0000DEAD	ROM:sub_F97C+18         	BX              LR              	sub_F97C returned to sub_F97Csub_C5E0+E 	
+0000DEAD	ROM:sub_C5E0+18         	BL              sub_F996        	sub_C5E0 call sub_C5E0sub_F996          	
+0000DEAD	ROM:sub_F996+E          	BL              sub_CF3A        	sub_F996 call sub_F996sub_CF3A          	
+0000DEAD	ROM:sub_CCE4+4C         	BX              LR              	sub_CCE4 returned to sub_CCE4sub_F996+12	
+0000DEAD	ROM:sub_F996+120        	BL              sub_D2B4        	sub_F996 call sub_F996sub_D2B4          	
+0000DEAD	ROM:sub_D2B4:loc_D460   	BL              sub_CD32        	sub_D2B4 call sub_D2B4sub_CD32          	
+0000DEAD	ROM:sub_CD32+4E         	BX              LR              	sub_CD32 returned to sub_CD32sub_D2B4:loc_D464	
+0000DEAD	ROM:sub_D2B4+1C8        	POP             {PC}            	sub_D2B4 returned to sub_D2B4sub_F996+124	
+0000DEAD	ROM:sub_F996+128        	POP             {R4,R5,PC}      	sub_F996 returned to sub_F996sub_C5E0+1C	
+0000DEAD	ROM:sub_B0D2+40         	BL              sub_CF3A        	sub_B0D2 call sub_B0D2sub_CF3A          	
+0000DEAD	ROM:sub_B0D2+44         	BL              sub_C60A        	sub_B0D2 call sub_B0D2sub_C60A          	
+0000DEAD	ROM:sub_C60A+8          	BL              sub_C584        	sub_C60A call sub_C60Asub_C584          	
+0000DEAD	ROM:sub_C584+5A         	BX              LR              	sub_C584 returned to sub_C584sub_C60A+C 	
+0000DEAD	ROM:sub_C60A+5C         	POP             {PC}            	sub_C60A returned to sub_C60Asub_B0D2+48	
+0000DEAD	ROM:sub_B0D2+50         	BL              sub_C14E        	sub_B0D2 call sub_B0D2sub_C14E          	
+0000DEAD	ROM:sub_C14E+16         	BX              LR              	sub_C14E returned to sub_C14Esub_B0D2+54	
+0000DEAD	ROM:sub_B0D2+7C         	BL              sub_D684        	sub_B0D2 call sub_B0D2sub_D684          	
+0000DEAD	ROM:sub_D684+80         	BX              LR              	sub_D684 returned to sub_D684sub_B0D2+80	
+0000DEAD	ROM:sub_B0D2+82         	BL              sub_D706        	sub_B0D2 call sub_B0D2sub_D706          	
+0000DEAD	ROM:sub_B0D2+8C         	BL              sub_C13E        	sub_B0D2 call sub_B0D2sub_C13E          	
+0000DEAD	ROM:sub_C13E+E          	BX              LR              	sub_C13E returned to sub_C13Esub_B0D2+90	
+0000DEAD	ROM:sub_B0D2+98         	BL              sub_D70C        	sub_B0D2 call sub_B0D2sub_D70C          	
+0000DEAD	ROM:sub_D70C+2446       	BX              LR              	sub_D70C returned to sub_D70Csub_B0D2+9C	
+0000DEAD	ROM:sub_B0D2+A0         	BL              sub_C214        	sub_B0D2 call sub_B0D2sub_C214          	
+0000DEAD	ROM:sub_C214+2E         	BL              sub_F4B8        	sub_C214 call sub_C214sub_F4B8          	
+0000DEAD	ROM:sub_F4B8+E          	BL              sub_CF3A        	sub_F4B8 call sub_F4B8sub_CF3A          	
+0000DEAD	ROM:sub_CD82+2A         	BL              sub_CCE4        	sub_CD82 call sub_CD82sub_CCE4          	
+0000DEAD	ROM:sub_CD82+6C         	POP             {R4-R7,PC}      	sub_CD82 returned to sub_CD82sub_F4B8+12	
+0000DEAD	ROM:sub_F4B8+16         	BL              sub_F4DC        	sub_F4B8 call sub_F4B8sub_F4DC          	
+0000DEAD	ROM:sub_F4DC+46         	BX              LR              	sub_F4DC returned to sub_F4DCsub_F4B8+1A	
+0000DEAD	ROM:sub_F4B8+1C         	BL              sub_D2B4        	sub_F4B8 call sub_F4B8sub_D2B4          	
+0000DEAD	ROM:sub_D2B4:loc_D480   	BL              sub_CDF0        	sub_D2B4 call sub_D2B4sub_CDF0          	
+0000DEAD	ROM:sub_CDF0+5A         	BL              sub_CD32        	sub_CDF0 call sub_CDF0sub_CD32          	
+0000DEAD	ROM:sub_CDF0+6C         	POP             {R4,R5,PC}      	sub_CDF0 returned to sub_CDF0sub_D2B4+1D0	
+0000DEAD	ROM:sub_F4B8+22         	POP             {R4-R6,PC}      	sub_F4B8 returned to sub_F4B8sub_C214+32	
+0000DEAD	ROM:sub_C214+38         	BL              sub_F52E        	sub_C214 call sub_C214sub_F52E          	
+0000DEAD	ROM:sub_F52E+C          	BL              sub_CF3A        	sub_F52E call sub_F52Esub_CF3A          	
+0000DEAD	ROM:sub_F52E+62         	POP             {R4,R5,PC}      	sub_F52E returned to sub_F52Esub_C214+3C	
+0000DEAD	ROM:sub_C214+44         	BL              sub_F524        	sub_C214 call sub_C214sub_F524          	
+0000DEAD	ROM:sub_F524+8          	BX              LR              	sub_F524 returned to sub_F524sub_C214+48	
+0000DEAD	ROM:sub_C214+56         	POP             {R4,PC}         	sub_C214 returned to sub_C214sub_B0D2+A4	
+0000DEAD	ROM:sub_B0D2+A4         	BL              sub_C28C        	sub_B0D2 call sub_B0D2sub_C28C          	
+0000DEAD	ROM:sub_F592+C          	BL              sub_D2B4        	sub_F592 call sub_F592sub_D2B4          	
+0000DEAD	ROM:sub_F592+3C         	POP             {PC}            	sub_F592 returned to sub_F592sub_B0D2+A8	
+0000DEAD	ROM:sub_B0D2+AC         	BL              sub_AE32        	sub_B0D2 call sub_B0D2sub_AE32          	
+0000DEAD	ROM:sub_AE32+20         	BX              LR              	sub_AE32 returned to sub_AE32sub_B0D2+B0	
+0000DEAD	ROM:sub_B0D2+B4         	BL              sub_AE74        	sub_B0D2 call sub_B0D2sub_AE74          	
+0000DEAD	ROM:sub_AE74+1A         	BX              LR              	sub_AE74 returned to sub_AE74sub_B0D2+B8	
+0000DEAD	ROM:sub_B0D2+B8         	BL              sub_C7B4        	sub_B0D2 call sub_B0D2sub_C7B4          	
+0000DEAD	ROM:sub_C7B4+12         	BL              sub_C6DC        	sub_C7B4 call sub_C7B4sub_C6DC          	
+0000DEAD	ROM:sub_C6DC+20         	BX              LR              	sub_C6DC returned to sub_C6DCsub_C7B4+16	
+0000DEAD	ROM:sub_C7B4+1A         	BL              sub_C708        	sub_C7B4 call sub_C7B4sub_C708          	
+0000DEAD	ROM:sub_C708+1E         	BX              LR              	sub_C708 returned to sub_C708sub_C7B4:loc_C7D2	
+0000DEAD	ROM:sub_C7B4+32         	BL              sub_C6DC        	sub_C7B4 call sub_C7B4sub_C6DC          	
+0000DEAD	ROM:sub_C6DC:locret_C706	BX              LR              	sub_C6DC returned to sub_C6DCsub_C7B4+36	
+0000DEAD	ROM:sub_C7B4+3A         	BL              sub_C680        	sub_C7B4 call sub_C7B4sub_C680          	
+0000DEAD	ROM:sub_C680+5A         	POP             {R4,R5,PC}      	sub_C680 returned to sub_C680sub_C7B4:loc_C7F2	
+0000DEAD	ROM:sub_C7B4+46         	BL              sub_C6DC        	sub_C7B4 call sub_C7B4sub_C6DC          	
+0000DEAD	ROM:sub_C7B4+4E         	BL              sub_C680        	sub_C7B4 call sub_C7B4sub_C680          	
+0000DEAD	ROM:sub_C7B4+58         	BL              sub_AD60        	sub_C7B4 call sub_C7B4sub_AD60          	
+0000DEAD	ROM:sub_AD60+E          	BX              LR              	sub_AD60 returned to sub_AD60sub_C7B4+5C	
+0000DEAD	ROM:sub_C7B4+80         	BL              sub_C728        	sub_C7B4 call sub_C7B4sub_C728          	
+0000DEAD	ROM:sub_C728+28         	BX              LR              	sub_C728 returned to sub_C728sub_C7B4+84	
+0000DEAD	ROM:sub_C858+16         	BL              sub_C6DC        	sub_C858 call sub_C858sub_C6DC          	
+0000DEAD	ROM:sub_C858+1E         	BL              sub_C680        	sub_C858 call sub_C858sub_C680          	
+0000DEAD	ROM:sub_C858+30         	BL              sub_C9E0        	sub_C858 call sub_C858sub_C9E0          	
+0000DEAD	ROM:sub_C858+38         	BL              sub_C680        	sub_C858 call sub_C858sub_C680          	
+0000DEAD	ROM:sub_C858+4A         	BL              sub_C9E2        	sub_C858 call sub_C858sub_C9E2          	
+0000DEAD	ROM:sub_C858+52         	BL              sub_C708        	sub_C858 call sub_C858sub_C708          	
+0000DEAD	ROM:sub_C858+58         	BL              sub_C678        	sub_C858 call sub_C858sub_C678          	
+0000DEAD	ROM:sub_C858+C0         	BL              sub_C9E0        	sub_C858 call sub_C858sub_C9E0          	
+0000DEAD	ROM:sub_C858+C8         	BL              sub_C680        	sub_C858 call sub_C858sub_C680          	
+0000DEAD	ROM:sub_C858:locret_C9AA	POP.W           {R1,R4-R9,PC}   	sub_C858 returned to sub_C858ROM:0000C784	
+0000DEAD	ROM:0000C786            	BL              sub_C728        	call sub_C728                           	
+0000DEAD	ROM:locret_C7B2         	POP             {R0,R4,R5,PC}   	returned to sub_C6DC+24                 	
+0000DEAD	ROM:sub_B0D2+CE         	BL              sub_45CC        	sub_B0D2 call sub_B0D2sub_45CC          	
+0000DEAD	ROM:sub_45CC+22         	BL              sub_7800        	sub_45CC call sub_45CCsub_7800          	
+0000DEAD	ROM:sub_B5B4+30         	POP             {PC}            	sub_B5B4 returned to sub_B5B4sub_45CC+26	
+0000DEAD	ROM:sub_45CC+62         	BL              sub_AC0A        	sub_45CC call sub_45CCsub_AC0A          	
+0000DEAD	ROM:sub_AC0A+C          	BL              sub_786A        	sub_AC0A call sub_AC0Asub_786A          	
+0000DEAD	ROM:sub_786A+28         	BL              sub_99B4        	sub_786A call sub_786Asub_99B4          	
+0000DEAD	ROM:sub_B5E8+C          	BXCS            LR              	sub_B5E8 returned to sub_B5E8sub_B5E8+E 	
+0000DEAD	ROM:sub_B5E8+20         	BX              LR              	sub_B5E8 returned to sub_B5E8sub_786A+2C	
+0000DEAD	ROM:sub_786A+3E         	BL              sub_B5E8        	sub_786A call sub_786Asub_B5E8          	
+0000DEAD	ROM:sub_786A+64         	BL              sub_B5E8        	sub_786A call sub_786Asub_B5E8          	
+0000DEAD	ROM:sub_786A+7E         	BL              sub_B5E8        	sub_786A call sub_786Asub_B5E8          	
+0000DEAD	ROM:sub_786A+9E         	POP.W           {R4-R9,PC}      	sub_786A returned to sub_786Asub_AC0A+10	
+0000DEAD	ROM:sub_AC0A+1C         	BL              emu_ROM_read    	sub_AC0A call sub_AC0Aemu_ROM_read      	
