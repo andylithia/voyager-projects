@@ -76,22 +76,16 @@ void board_init(void)
 	// Put all pins to default state (input & pull-up)
 	uint32_t pin;
 
-	/*
+	
 	for (pin = PIN_PA00; pin <= PIN_PC31; pin ++) {
 		// Skip output pins to configure later
-		if (pin == LED0_GPIO || pin == LCD_BL_GPIO
-#ifdef CONF_BOARD_RS485
-		|| pin == RS485_USART_CTS_PIN
-#endif
-		// PA02 is not configured as it is driven by hardware
-		// configuration
-		|| pin == PIN_PA02) {
+		if (pin == PIN_PA02) {
 			continue;
 		}
 		ioport_set_pin_dir(pin, IOPORT_DIR_INPUT);
 		ioport_set_pin_mode(pin, IOPORT_MODE_PULLUP);
 	}
-*/
+
 	/* Configure the pins connected to LEDs as output and set their
 	 * default initial state to high (LEDs off).
 	 */
@@ -106,12 +100,6 @@ void board_init(void)
 			GPIO_UNIT_TEST_EIC_PIN_MUX);
 #else
 	// Push button as input: already done, it's the default pin state
-#endif
-
-#if (defined CONF_BOARD_BL)
-	// Configure LCD backlight
-	// ioport_set_pin_dir(LCD_BL_GPIO, IOPORT_DIR_OUTPUT);
-	// ioport_set_pin_level(LCD_BL_GPIO, LCD_BL_INACTIVE_LEVEL);
 #endif
 
 #if (defined CONF_BOARD_USB_PORT)

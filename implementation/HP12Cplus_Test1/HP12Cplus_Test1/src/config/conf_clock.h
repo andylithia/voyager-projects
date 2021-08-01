@@ -60,8 +60,8 @@
 #define CONFIG_SYSCLK_CPU_DIV         0
 #define CONFIG_SYSCLK_PBA_DIV         0
 #define CONFIG_SYSCLK_PBB_DIV         0
-#define CONFIG_SYSCLK_PBC_DIV         2
-#define CONFIG_SYSCLK_PBD_DIV         2
+#define CONFIG_SYSCLK_PBC_DIV         0
+#define CONFIG_SYSCLK_PBD_DIV         0
 
 //#define CONFIG_USBCLK_SOURCE        USBCLK_SRC_OSC0
 //#define CONFIG_USBCLK_SOURCE        USBCLK_SRC_PLL0

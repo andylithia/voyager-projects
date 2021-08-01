@@ -10,7 +10,7 @@ src/ASF/sam/utils/cmsis/sam4l/source/templates/system_sam4l.d \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\_intsup.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\_stdint.h \
  ../src/ASF/sam/utils/cmsis/sam4l/include/sam4l.h \
- ../src/ASF/sam/utils/cmsis/sam4l/include/sam4lc2a.h \
+ ../src/ASF/sam/utils/cmsis/sam4l/include/sam4lc2c.h \
  ../src/ASF/thirdparty/CMSIS/Include/core_cm4.h \
  ../src/ASF/thirdparty/CMSIS/Include/cmsis_version.h \
  ../src/ASF/thirdparty/CMSIS/Include/cmsis_compiler.h \
@@ -95,7 +95,7 @@ src/ASF/sam/utils/cmsis/sam4l/source/templates/system_sam4l.d \
  ../src/ASF/sam/utils/cmsis/sam4l/include/instance/instance_usart3.h \
  ../src/ASF/sam/utils/cmsis/sam4l/include/instance/instance_usbc.h \
  ../src/ASF/sam/utils/cmsis/sam4l/include/instance/instance_wdt.h \
- ../src/ASF/sam/utils/cmsis/sam4l/include/pio/pio_sam4lc2a.h
+ ../src/ASF/sam/utils/cmsis/sam4l/include/pio/pio_sam4lc2c.h
 
 ../src/ASF/sam/utils/cmsis/sam4l/source/templates/system_sam4l.h:
 
@@ -115,7 +115,7 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/ASF/sam/utils/cmsis/sam4l/include/sam4l.h:
 
-../src/ASF/sam/utils/cmsis/sam4l/include/sam4lc2a.h:
+../src/ASF/sam/utils/cmsis/sam4l/include/sam4lc2c.h:
 
 ../src/ASF/thirdparty/CMSIS/Include/core_cm4.h:
 
@@ -285,4 +285,4 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 ../src/ASF/sam/utils/cmsis/sam4l/include/instance/instance_wdt.h:
 
-../src/ASF/sam/utils/cmsis/sam4l/include/pio/pio_sam4lc2a.h:
+../src/ASF/sam/utils/cmsis/sam4l/include/pio/pio_sam4lc2c.h:

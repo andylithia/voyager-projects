@@ -2,6 +2,12 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+src\help.c
+
+src\keyboard.c
+
+src\nut.c
+
 src\ASF\common\services\clock\sam4l\dfll.c
 
 src\ASF\common\services\clock\sam4l\osc.c
@@ -51,6 +57,8 @@ src\ASF\sam\utils\cmsis\sam4l\source\templates\gcc\startup_sam4l.c
 src\ASF\sam\utils\cmsis\sam4l\source\templates\system_sam4l.c
 
 src\ASF\sam\utils\syscalls\gcc\syscalls.c
+
+src\lcd.c
 
 src\lcdca_example.c
 

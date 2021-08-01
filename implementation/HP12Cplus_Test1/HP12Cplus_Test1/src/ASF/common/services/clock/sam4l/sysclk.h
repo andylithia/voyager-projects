@@ -307,7 +307,7 @@ extern "C" {
 
 // Use the slow clock (RCOSC) with no prescaling if config was empty.
 #ifndef CONFIG_SYSCLK_SOURCE
-# define CONFIG_SYSCLK_SOURCE    SYSCLK_SRC_RCSYS
+# define CONFIG_SYSCLK_SOURCE    SYSCLK_SRC_RCFAST
 #endif /* CONFIG_SYSCLK_SOURCE */
 
 /*
@@ -484,7 +484,7 @@ extern "C" {
  * USB is not required.
  */
 #ifdef __DOXYGEN__
-# define CONFIG_USBCLK_SOURCE
+// # define CONFIG_USBCLK_SOURCE
 #endif
 
 /**
@@ -499,7 +499,7 @@ extern "C" {
  * will give a 48 MHz clock frequency from the selected source.
  */
 #ifdef __DOXYGEN__
-# define CONFIG_USBCLK_DIV
+// # define CONFIG_USBCLK_DIV
 #endif
 
 /**

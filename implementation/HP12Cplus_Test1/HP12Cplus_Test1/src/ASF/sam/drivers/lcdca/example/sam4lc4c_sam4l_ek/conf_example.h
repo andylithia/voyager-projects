@@ -41,7 +41,7 @@
 // #define NEXT_BUTTON     GPIO_PUSH_BUTTON_0
 
 /** LCD contrast level */
-#define LCD_CONTRAST_LEVEL 30
+#define LCD_CONTRAST_LEVEL 10
 
 /**
  * Here are definitions of C42364A glass LCD for this example
